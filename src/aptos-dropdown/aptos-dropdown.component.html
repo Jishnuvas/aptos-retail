@@ -1,0 +1,20 @@
+<div class="custom-select">
+  <select
+    onfocus="this.size=7"
+    onblur="this.size=0"
+    onchange="this.size=1;this.blur()"
+    [(ngModel)]="selectedOption"
+  >
+    <option class="options" value="placeholder" disabled>
+      {{ placeholder }}
+    </option>
+    <option
+      class="options"
+      *ngFor="let option of dropDownList; let i = index"
+      [value]="option.value"
+      (click)="onOptionSelect(option.id)"
+    >
+      {{ option.label }}
+    </option>
+  </select>
+</div>

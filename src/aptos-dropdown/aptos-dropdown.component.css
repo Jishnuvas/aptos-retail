@@ -1,0 +1,33 @@
+.custom-select select {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.options{
+  padding: 10px;
+}
+
+.options:hover {
+  background-color: rgb(190, 219, 236) !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(133, 176, 224);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(72, 160, 233);
+}
